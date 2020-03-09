@@ -20,5 +20,7 @@ h1{
 .footer{
 	text-align: center;
 	font-size: 13px;
-	margin-bottom: 10px;
+}
+.footer .source{
+	padding: 5px 0;
 }

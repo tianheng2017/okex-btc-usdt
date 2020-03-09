@@ -1,4 +1,4 @@
-<?php /*a:1:{s:44:"/www/wwwroot/php8.run/app/view/index/tj.html";i:1583046793;}*/ ?>
+<?php /*a:1:{s:44:"/www/wwwroot/php8.run/app/view/index/tj.html";i:1583719418;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -17,6 +17,10 @@
 			<span id="online"><?php echo htmlentities($online); ?></span>
 			<span>，已采集数据：</span>
 			<span id="tradeNum"><?php echo htmlentities($tradeNum); ?></span>
+			<div style="line-height: 40px;">
+				<span>Github开源：</span>
+				<a href="https://github.com/tianheng2017/okex-btc-usdt" target="_blank">简易OKEX BTC/USDT现货统计系统</a>
+			</div>
 		</span>
 	</div>
 	<script>

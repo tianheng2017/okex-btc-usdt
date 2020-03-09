@@ -2,7 +2,7 @@
 
 ## 安装环境  
 ```
-nginx + php7.4 + redis5.0.7
+nginx + php7.4 + redis5
 ```  
 ## 启动workerman
 ```

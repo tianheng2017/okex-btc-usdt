@@ -1,4 +1,4 @@
-<?php /*a:1:{s:47:"/www/wwwroot/php8.run/app/view/index/index.html";i:1583283955;}*/ ?>
+<?php /*a:1:{s:47:"/www/wwwroot/php8.run/app/view/index/index.html";i:1583720252;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -21,6 +21,10 @@
 			<span id="online"><?php echo htmlentities($online); ?></span>
 			<span>，已采集数据：</span>
 			<a id="tradeNum" href="<?php echo url('/tj'); ?>"><?php echo htmlentities($tradeNum); ?></a>
+			<div class="source">
+				<span>Github开源：</span>
+				<a href="https://github.com/tianheng2017/okex-btc-usdt" target="_blank">简易OKEX BTC/USDT现货统计系统</a>
+			</div>
 		</span>
 	</div>
 	<script>
@@ -43,7 +47,7 @@
 	                ,{field: 'sellMax', title: '最大卖单', align:'center'}
 	            ]]
 	            ,done: function (res, curr, count) {
-	                layer.msg('数据已刷新');
+	                //layer.msg('数据已刷新');
 	            }
 	        });
 	        window.setInterval(function() {
@@ -64,7 +68,7 @@
 	                    }]
 	                });
 	            });
-	        },60000);
+	        },10000);
 	    });
 	    var myChart = echarts.init(document.getElementById('main'));
 	    option = {

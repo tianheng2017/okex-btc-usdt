@@ -20,6 +20,10 @@
 			<span id="online">{$online}</span>
 			<span>，已采集数据：</span>
 			<a id="tradeNum" href="{:url('/tj')}">{$tradeNum}</a>
+			<div class="source">
+				<span>Github开源：</span>
+				<a href="https://github.com/tianheng2017/okex-btc-usdt" target="_blank">简易OKEX BTC/USDT现货统计系统</a>
+			</div>
 		</span>
 	</div>
 	<script>
@@ -42,7 +46,7 @@
 	                ,{field: 'sellMax', title: '最大卖单', align:'center'}
 	            ]]
 	            ,done: function (res, curr, count) {
-	                layer.msg('数据已刷新');
+	                //layer.msg('数据已刷新');
 	            }
 	        });
 	        window.setInterval(function() {
@@ -63,7 +67,7 @@
 	                    }]
 	                });
 	            });
-	        },60000);
+	        },10000);
 	    });
 	    var myChart = echarts.init(document.getElementById('main'));
 	    option = {
