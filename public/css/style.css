@@ -1,0 +1,24 @@
+*{
+	margin:0;
+	padding:0;
+}
+.layui-table-tool{
+    background-color: unset;
+}
+.table{
+    height: 365px;
+}
+.main{
+    width: 100%;
+    height:500px;
+    margin:10px auto;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+.footer{
+	text-align: center;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
