@@ -34,7 +34,6 @@ class Worker extends Server
  
     public function onWorkerStart($worker)
     {
-    	$redis = new Redis();
         Timer::add(1, function() use($worker){
             $data = json_encode([
                 'online'    => $this->connection_count,
@@ -52,8 +51,5 @@ class Worker extends Server
         $this->connection_count--;
     }
 
-    public function onError($connection, $code, $msg)
-    {
-
-    }
+    public function onError($connection, $code, $msg){}
 }
