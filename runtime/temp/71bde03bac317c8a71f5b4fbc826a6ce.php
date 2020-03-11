@@ -1,4 +1,4 @@
-<?php /*a:1:{s:47:"/www/wwwroot/php8.run/app/view/index/index.html";i:1583720252;}*/ ?>
+<?php /*a:1:{s:47:"/www/wwwroot/php8.run/app/view/index/index.html";i:1583801548;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -68,7 +68,7 @@
 	                    }]
 	                });
 	            });
-	        },10000);
+	        },30000);
 	    });
 	    var myChart = echarts.init(document.getElementById('main'));
 	    option = {

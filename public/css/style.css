@@ -24,3 +24,6 @@ h1{
 .footer .source{
 	padding: 5px 0;
 }
+a{
+	text-decoration: underline;
+}

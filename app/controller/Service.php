@@ -31,7 +31,9 @@ class Service extends Base
 	
 	private function add($res, $random)
 	{
-		!$this->lock('lock', $random) && exit('false:lock fail');
+		if (!$this->lock('lock', $random)) {
+			exit('false:lock fail');
+		}
         $i = 0;
 	    foreach ($res as $k => $v){
             $status = $this->redis->sadd('trades', $v['trade_id']);
@@ -55,7 +57,9 @@ class Service extends Base
             end
             return 0
 EOF;
-        !$this->redis->eval($script, ['count','lock',$count,$random], 2) && exit('false:after');
+        if (!$this->redis->eval($script, ['count','lock',$count,$random], 2)){
+        	exit('false:after');
+        }
     	return true;
 	}
 	

@@ -20,10 +20,7 @@ abstract class Base{
         $this->app     = $app;
         $this->request = $this->app->request;
         $this->redis = new Redis();
-        $this->initialize();
     }
-
-    protected function initialize(){}
 
     /**
      * 获取锁
